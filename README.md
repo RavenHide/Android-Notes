@@ -16,3 +16,7 @@ CustomTabs：APP使用chrome来显示网页，简单易用，但需要安装chro
 6.SpannabelString：string的修改 添加图片 下划线，自定义string中的字符的大小 颜色，添加部分字符监听的点击 介绍：http://www.jianshu.com/p/84067ad289d2
 
 7.ValueAnimator  + argbEvaluator 实习颜色渐变动画效果
+
+8.MPAndroidChart绘制图表的第三方库 github地址：https://github.com/ggchxx/MPAndroidChart
+  中文API：https://github.com/25sprout/ChartLib-Demo-Android#ValueFormatter
+  API：https://jitpack.io/com/github/PhilJay/MPAndroidChart/v3.0.0-beta1/javadoc/
