@@ -1,0 +1,3 @@
+1.commit和commitAllowingStateLoss()是异步，但是可以支持addToBackStack()
+  commitAllowingStateLoss()不能保存fragment状态，但fragment不需要保存时，可以使用
+2.commmitNot和commitNowAllowingStateLoss()是同步，但是不支持addToBackStack()
