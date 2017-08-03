@@ -1,0 +1,9 @@
+Behavior是child的layoutparams里的属性
+Behavior类中的方法
+  1.layoutDependsO(CoordinatorLayout parent,FloatingActionButton child, View dependency)
+  建立child 和 dependency的依赖关系，通过在一定条件下return true 便可建立
+    具体coordinatorLayout -> dependsOn -> layoutDependsOn
+    注意：当确定依赖关系后，当dependency被布局（或测量）后child会紧接着被布局（或测量）
+    
+  2.onDependentViewChanged(CoordinatorLayout parent, V child, View dependency) 
+  通过监听dependency的改变来改变child，return true表示child发生改变生效
