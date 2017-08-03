@@ -20,3 +20,7 @@ CustomTabs：APP使用chrome来显示网页，简单易用，但需要安装chro
 8.MPAndroidChart绘制图表的第三方库 github地址：https://github.com/ggchxx/MPAndroidChart
   中文API：https://github.com/25sprout/ChartLib-Demo-Android#ValueFormatter
   API：https://jitpack.io/com/github/PhilJay/MPAndroidChart/v3.0.0-beta1/javadoc/
+  
+9.Hugo插件，打印方法运行时间，解决android应用卡顿问题
+10.godeyes 插件，crash隐患扫描工具
+11.activity tracker ：显示栈顶activity信息，快速查找页面对应的activity
