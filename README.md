@@ -24,3 +24,5 @@ CustomTabs：APP使用chrome来显示网页，简单易用，但需要安装chro
 9.Hugo插件，打印方法运行时间，解决android应用卡顿问题
 10.godeyes 插件，crash隐患扫描工具
 11.activity tracker ：显示栈顶activity信息，快速查找页面对应的activity
+
+12.Bottom Navigation Views底部导航栏
