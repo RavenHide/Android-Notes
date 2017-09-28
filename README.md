@@ -26,3 +26,5 @@ CustomTabs：APP使用chrome来显示网页，简单易用，但需要安装chro
 11.activity tracker ：显示栈顶activity信息，快速查找页面对应的activity
 
 12.Bottom Navigation Views底部导航栏
+
+13 Realm MVCC(多版本并发）数据库， 速度快于SQLite，有自己的数据库引擎，嵌入式，简单介绍：http://www.jianshu.com/p/37af717761cc
