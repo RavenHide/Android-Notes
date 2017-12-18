@@ -92,3 +92,59 @@ Fragment Transition大体和上文介绍的Activity Transition一致
 3. 虽然在activity中transition是被startActivity()和finishAfterTransition()触发的，但是Fragment的transition却是在其被FragmentTransaction执行下列动作的时候自动发生的。**added**, **removed**, **attached**, **detached**, **shown**, ，**hidden**。
 4. 在**Fragment commit**之前，共享元素需要通过调用`addSharedElement(View, String)`方法来成为**FragmentTransaction**的一部分。
 
+
+# 相应的动画插值器
+
+```
+AccelerateDecelerateInterpolator 在动画开始与结束的地方速率改变比较慢，在中间的时候加速
+
+AccelerateInterpolator  在动画开始的地方速率改变比较慢，然后开始加速
+
+AnticipateInterpolator 开始的时候向后然后向前甩
+
+AnticipateOvershootInterpolator 开始的时候向后然后向前甩一定值后返回最后的值
+
+BounceInterpolator   动画结束的时候弹起
+
+CycleInterpolator 动画循环播放特定的次数，速率改变沿着正弦曲线
+
+DecelerateInterpolator 在动画开始的地方快然后慢
+
+LinearInterpolator   以常量速率改变
+
+OvershootInterpolator    向前甩一定值后再回到原来位置
+```
+
+# 动画XML属性
+
+```
+android:windowContentTransitions                允许使用transitions
+
+android:windowAllowEnterTransitionOverlap        是否覆盖执行，其实可以理解成前后两个页面是同步执行还是顺序执行
+
+android:windowAllowReturnTransitionOverlap        与上面相同。即上一个设置了退出动画，这个设置了进入动画，两者是否同时执行。
+
+android:windowContentTransitionManager            引用TransitionManager XML资源，定义不同窗口内容之间的所需转换。
+
+
+
+android:windowEnterTransition                    首次进入显示的动画
+
+android:windowExitTransition                    启动新 Activity ，此页面退出的动画
+
+android:windowReenterTransition                    重新进入的动画。即第二次进入，可以和首次进入不一样。
+
+android:windowReturnTransition                    调用 finishAfterTransition() 退出时，此页面退出的动画
+
+
+
+android:windowSharedElementsUseOverlay            指示共享元素在转换期间是否应使用叠加层。
+
+android:windowSharedElementEnterTransition        首次进入显示的动画
+
+android:windowSharedElementExitTransition        启动新 Activity ，此页面退出的动画
+
+android:windowSharedElementReenterTransition    重新进入的动画。即第二次进入，可以和首次进入不一样。
+
+android:windowSharedElementReturnTransition        调用 finishAfterTransition() 退出时，此页面退出的动画
+```
